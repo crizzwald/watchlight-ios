@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CeP-uf-u2W">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="CI2-At-C9Z">
+            <objects>
+                <controller id="CeP-uf-u2W" userLabel="Main Controller" customClass="MainController" customModule="WatchLight">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" id="qeX-hh-J9n">
+                            <items>
+                                <label width="1" height="1" alignment="center" verticalAlignment="center" alpha="0.0" text="REMOVE WATCH" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="2" id="HrL-aR-dei">
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <picker width="70" height="70" alignment="center" verticalAlignment="center" alpha="0.0" id="Nyc-Ph-mmf">
+                                    <connections>
+                                        <action selector="mainPickerChanged:" destination="CeP-uf-u2W" id="MC2-Dh-5K1"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="mainGroup" destination="qeX-hh-J9n" id="Iep-1b-3HW"/>
+                        <outlet property="mainPicker" destination="Nyc-Ph-mmf" id="ZnS-68-Ccf"/>
+                        <outlet property="sensorText" destination="HrL-aR-dei" id="RYN-0z-Q3V"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="54" y="-57"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="rjY-Ar-IMT">
+            <objects>
+                <glanceController spacing="0.0" topTemplateType="extraLarge" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="WatchLight" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="light" id="Ot7-wu-HDW"/>
+                        <group alignment="left" id="eew-Gs-W6Y">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="54" y="216"/>
+        </scene>
+    </scenes>
+</document>
