@@ -28,7 +28,7 @@
                             <constraint firstItem="uvH-Ru-Pyh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Uwb-QV-AIc"/>
                             <constraint firstItem="uvH-Ru-Pyh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XBF-KX-UE7"/>
                             <constraint firstItem="uvH-Ru-Pyh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aes-2K-C7u"/>
-                            <constraint firstItem="uvH-Ru-Pyh" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="pZn-6L-7h2"/>
+                            <constraint firstItem="uvH-Ru-Pyh" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="pm4-4B-dOe"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -38,7 +38,6 @@
                                 <exclude reference="Uwb-QV-AIc"/>
                                 <exclude reference="XBF-KX-UE7"/>
                                 <exclude reference="aes-2K-C7u"/>
-                                <exclude reference="pZn-6L-7h2"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -49,17 +48,16 @@
                                 <include reference="Uwb-QV-AIc"/>
                                 <include reference="XBF-KX-UE7"/>
                                 <include reference="aes-2K-C7u"/>
-                                <include reference="pZn-6L-7h2"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439.5" y="393"/>
+            <point key="canvasLocation" x="532" y="474"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Bg" width="640" height="1136"/>
+        <image name="Bg" width="320" height="568"/>
     </resources>
 </document>
